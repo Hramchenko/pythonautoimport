@@ -1,3 +1,5 @@
+# Copyright (C) 2012, by Hramchenko Vitaliy <hramchenko@bk.ru> under LGPLv3 license
+
 import os, sys
 
 
@@ -21,6 +23,8 @@ def is_module_local(module):
 def append_modules(module, modules_dict):
     for k, v in modules_dict.items():
         imported_module = None
+        if hasattr(module, k):
+            continue
         try:
             import_command = 'import ' + v + ' as imported_module'
             exec(import_command)
