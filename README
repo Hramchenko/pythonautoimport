@@ -1,0 +1,32 @@
+Welcome to pythonautoimport!
+
+Pythonautoimport is a simple python function for automatic import
+packages into all modules of a program, which could be very useful 
+in interactive debugging process. This module avoids you to enter long
+import instructions at every break point.
+
+ModulesLoader.py also contains load_scientific_modules() function which
+helps you to debug scipy programs in Matlab style.
+
+Just enter:
+
+x = np.arange(0.0, 1.0+0.01, 0.01)
+y = np.cos(2*2*np.pi*x)
+plt.plot(x, y)
+plt.show()
+
+At a debug point to visualize your data.
+
+
+Contributions
+==================================
+If you want to develop this project, please write mail to me.
+   
+Author:
+==================================
+Hramchenko Vitaliy <v.hramchenko@gmail.com>
+
+==================================
+For more information visit project page:
+https://github.com/Hramchenko/pythonautoimport/
+
