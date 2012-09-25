@@ -49,8 +49,7 @@ def load_scientific_modules():
                    plt='matplotlib.pyplot',
                    sys='sys',
                    os='os',
-                   cv2='cv2',
-                   cv='cv2.cv',
+                   cv='cv',
                    pylab='pylab')
     load_modules_dict(modules)
 
