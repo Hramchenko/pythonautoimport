@@ -9,7 +9,7 @@ import ModulesLoader
 # Warning! Call ModulesLoader.load_modules_dict only when
 # all your own modules are imported! 
 
-modules = dict(os='os', string='string')
+modules = dict(os='os', string='string', sp='scipy')
 ModulesLoader.load_modules_dict(modules)
 
 # For scientific calculations you also could use 
